@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @parking_spot.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @parking_spot.long %>
+</p>
+
+<%= link_to 'Edit', edit_parking_spot_path(@parking_spot) %> |
+<%= link_to 'Back', parking_spots_path %>

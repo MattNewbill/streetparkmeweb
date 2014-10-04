@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parking_spot_id: 1
+  cost_per_hour: 9.99
+  beg_time_restriction: 2014-10-03 00:00:28
+  end_time_restriction: 2014-10-03 00:00:28
+  hour_time_restriction_duration: 1
+  minute_time_restriction_durection: 1
+  active_monday: false
+  active_tuesday: false
+  active_wednesday: false
+  active_thursday: false
+  active_friday: false
+  active_saturday: false
+  active_sunday: false
+  parking_spots_id: 
+
+two:
+  parking_spot_id: 1
+  cost_per_hour: 9.99
+  beg_time_restriction: 2014-10-03 00:00:28
+  end_time_restriction: 2014-10-03 00:00:28
+  hour_time_restriction_duration: 1
+  minute_time_restriction_durection: 1
+  active_monday: false
+  active_tuesday: false
+  active_wednesday: false
+  active_thursday: false
+  active_friday: false
+  active_saturday: false
+  active_sunday: false
+  parking_spots_id: 

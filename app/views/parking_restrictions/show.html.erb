@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Cost per hour:</strong>
+  <%= @parking_restriction.cost_per_hour %>
+</p>
+
+<p>
+  <strong>Beg time restriction:</strong>
+  <%= @parking_restriction.beg_time_restriction %>
+</p>
+
+<p>
+  <strong>End time restriction:</strong>
+  <%= @parking_restriction.end_time_restriction %>
+</p>
+
+<p>
+  <strong>Hour time restriction duration:</strong>
+  <%= @parking_restriction.hour_time_restriction_duration %>
+</p>
+
+<p>
+  <strong>Minute time restriction durection:</strong>
+  <%= @parking_restriction.minute_time_restriction_durection %>
+</p>
+
+<p>
+  <strong>Active monday:</strong>
+  <%= @parking_restriction.active_monday %>
+</p>
+
+<p>
+  <strong>Active tuesday:</strong>
+  <%= @parking_restriction.active_tuesday %>
+</p>
+
+<p>
+  <strong>Active wednesday:</strong>
+  <%= @parking_restriction.active_wednesday %>
+</p>
+
+<p>
+  <strong>Active thursday:</strong>
+  <%= @parking_restriction.active_thursday %>
+</p>
+
+<p>
+  <strong>Active friday:</strong>
+  <%= @parking_restriction.active_friday %>
+</p>
+
+<p>
+  <strong>Active saturday:</strong>
+  <%= @parking_restriction.active_saturday %>
+</p>
+
+<p>
+  <strong>Active sunday:</strong>
+  <%= @parking_restriction.active_sunday %>
+</p>
+
+<p>
+  <strong>Parking spots id:</strong>
+  <%= @parking_restriction.parking_spots_id %>
+</p>
+
+<%= link_to 'Edit', edit_parking_restriction_path(@parking_restriction) %> |
+<%= link_to 'Back', parking_restrictions_path %>

@@ -1,0 +1,30 @@
+<h1>Listing parking_spots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat</th>
+      <th>Long</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parking_spots.each do |parking_spot| %>
+      <tr>
+        <td><%= parking_spot.lat %></td>
+        <td><%= parking_spot.long %></td>
+        <td><%= parking_spot.ParkingRestriction %></td>
+        <td><%= link_to 'Show', parking_spot %></td>
+        <td><%= link_to 'Edit', edit_parking_spot_path(parking_spot) %></td>
+        <td><%= link_to 'Destroy', parking_spot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parking spot', new_parking_spot_path %>

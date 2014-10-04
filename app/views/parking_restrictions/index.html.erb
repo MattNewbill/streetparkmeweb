@@ -1,0 +1,51 @@
+<h1>Listing parking_restrictions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cost per hour</th>
+      <th>Beg time restriction</th>
+      <th>End time restriction</th>
+      <th>Hour time restriction duration</th>
+      <th>Minute time restriction durection</th>
+      <th>Monday</th>
+      <th>tuesday</th>
+      <th>wednesday</th>
+      <th>thursday</th>
+      <th>friday</th>
+      <th>saturday</th>
+      <th>sunday</th>
+      <th>Parking spots id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parking_restrictions.each do |parking_restriction| %>
+      <tr>
+        <td><%= parking_restriction.cost_per_hour %></td>
+        <td><%= parking_restriction.beg_time_restriction %></td>
+        <td><%= parking_restriction.end_time_restriction %></td>
+        <td><%= parking_restriction.hour_time_restriction_duration %></td>
+        <td><%= parking_restriction.minute_time_restriction_durection %></td>
+        <td><%= parking_restriction.active_monday %></td>
+        <td><%= parking_restriction.active_tuesday %></td>
+        <td><%= parking_restriction.active_wednesday %></td>
+        <td><%= parking_restriction.active_thursday %></td>
+        <td><%= parking_restriction.active_friday %></td>
+        <td><%= parking_restriction.active_saturday %></td>
+        <td><%= parking_restriction.active_sunday %></td>
+        <td><%= parking_restriction.parking_spots_id %></td>
+        <td><%= link_to 'Show', parking_restriction %></td>
+        <td><%= link_to 'Edit', edit_parking_restriction_path(parking_restriction) %></td>
+        <td><%= link_to 'Destroy', parking_restriction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parking restriction', new_parking_restriction_path %>
