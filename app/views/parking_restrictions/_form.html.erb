@@ -21,52 +21,27 @@
   </div>
   <div class="field">
     <%= f.label :beg_time_restriction %><br>
-    <%= f.time_select :beg_time_restriction %>
+    <%= f.text_field :beg_time_restriction %>
   </div>
   <div class="field">
     <%= f.label :end_time_restriction %><br>
-    <%= f.time_select :end_time_restriction %>
+    <%= f.text_field :end_time_restriction %>
   </div>
   <div class="field">
-    <%= f.label :hour_time_restriction_duration %><br>
-    <%= f.number_field :hour_time_restriction_duration %>
+    <%= f.label :time_limit %><br>
+    <%= f.number_field :time_limit %>
   </div>
   <div class="field">
-    <%= f.label :minute_time_restriction_durection %><br>
-    <%= f.number_field :minute_time_restriction_durection %>
+    <%= f.label :days_active %><br>
+    <%= f.check_box :days_active %><br>
+    <%= f.check_box :days_active %><br>
+    <%= f.check_box :days_active %><br>
+    <%= f.check_box :days_active %><br>
+    <%= f.check_box :days_active %><br>
+    <%= f.check_box :days_active %>
   </div>
-  <div class="field">
-    <%= f.label :active_monday %><br>
-    <%= f.check_box :active_monday %>
-  </div>
-  <div class="field">
-    <%= f.label :active_tuesday %><br>
-    <%= f.check_box :active_tuesday %>
-  </div>
-  <div class="field">
-    <%= f.label :active_wednesday %><br>
-    <%= f.check_box :active_wednesday %>
-  </div>
-  <div class="field">
-    <%= f.label :active_thursday %><br>
-    <%= f.check_box :active_thursday %>
-  </div>
-  <div class="field">
-    <%= f.label :active_friday %><br>
-    <%= f.check_box :active_friday %>
-  </div>
-  <div class="field">
-    <%= f.label :active_saturday %><br>
-    <%= f.check_box :active_saturday %>
-  </div>
-  <div class="field">
-    <%= f.label :active_sunday %><br>
-    <%= f.check_box :active_sunday %>
-  </div>
-  <div class="field">
-    <%= f.label :parking_spots_id %><br>
-    <%= f.text_field :parking_spots_id %>
-  </div>
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

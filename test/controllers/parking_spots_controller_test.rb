@@ -18,7 +18,7 @@ class ParkingSpotsControllerTest < ActionController::TestCase
 
   test "should create parking_spot" do
     assert_difference('ParkingSpot.count') do
-      post :create, parking_spot: { lat: @parking_spot.lat, long: @parking_spot.long }
+      post :create, parking_spot: { latitude: @parking_spot.latitude, longitude: @parking_spot.longitude }
     end
 
     assert_redirected_to parking_spot_path(assigns(:parking_spot))
@@ -35,7 +35,7 @@ class ParkingSpotsControllerTest < ActionController::TestCase
   end
 
   test "should update parking_spot" do
-    patch :update, id: @parking_spot, parking_spot: { lat: @parking_spot.lat, long: @parking_spot.long }
+    patch :update, id: @parking_spot, parking_spot: { latitude: @parking_spot.latitude, longitude: @parking_spot.longitude }
     assert_redirected_to parking_spot_path(assigns(:parking_spot))
   end
 

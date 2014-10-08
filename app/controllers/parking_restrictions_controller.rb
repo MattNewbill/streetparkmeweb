@@ -69,6 +69,6 @@ class ParkingRestrictionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def parking_restriction_params
-      params.require(:parking_restriction).permit(:parking_spot_id, :cost_per_hour, :beg_time_restriction, :end_time_restriction, :hour_time_restriction_duration, :minute_time_restriction_durection, :active_monday, :active_tuesday, :active_wednesday, :active_thursday, :active_friday, :active_saturday, :active_sunday, :parking_spots_id)
+      params.require(:parking_restriction).permit(:parking_spot_id, :cost_per_hour, :beg_time_restriction, :end_time_restriction, :time_limit_hour, :time_limit_min, :active_monday, :active_tuesday, :active_wednesday, :active_thursday, :active_friday, :active_saturday, :active_sunday)
     end
 end

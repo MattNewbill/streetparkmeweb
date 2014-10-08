@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141003070028) do
+ActiveRecord::Schema.define(version: 20141007211310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,25 +21,16 @@ ActiveRecord::Schema.define(version: 20141003070028) do
     t.decimal  "cost_per_hour"
     t.time     "beg_time_restriction"
     t.time     "end_time_restriction"
-    t.integer  "hour_time_restriction_duration"
-    t.integer  "minute_time_restriction_durection"
-    t.boolean  "active_monday"
-    t.boolean  "active_tuesday"
-    t.boolean  "active_wednesday"
-    t.boolean  "active_thursday"
-    t.boolean  "active_friday"
-    t.boolean  "active_saturday"
-    t.boolean  "active_sunday"
-    t.integer  "parking_spots_id"
+    t.time     "time_limit"
+    t.string   "other_note"
+    t.boolean  "days_active",          default: [], array: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "parking_restrictions", ["parking_spots_id"], name: "index_parking_restrictions_on_parking_spots_id", using: :btree
-
   create_table "parking_spots", force: true do |t|
-    t.decimal  "lat"
-    t.decimal  "long"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
